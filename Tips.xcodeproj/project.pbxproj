@@ -15,7 +15,6 @@
 		CE256DEB1BE5BFEA002734BA /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE256DEA1BE5BFEA002734BA /* TipsTests.swift */; };
 		CE256DF61BE5BFEA002734BA /* TipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE256DF51BE5BFEA002734BA /* TipsUITests.swift */; };
 		CE256E041BE5C821002734BA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE256E031BE5C821002734BA /* SettingsViewController.swift */; };
-		CE256E401BE7AFFA002734BA /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE256E3F1BE7AFFA002734BA /* Empty.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		CE256DF51BE5BFEA002734BA /* TipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsUITests.swift; sourceTree = "<group>"; };
 		CE256DF71BE5BFEA002734BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE256E031BE5C821002734BA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		CE256E3F1BE7AFFA002734BA /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				CE256DD51BE5BFEA002734BA /* AppDelegate.swift */,
 				CE256DD71BE5BFEA002734BA /* ViewController.swift */,
 				CE256DD91BE5BFEA002734BA /* Main.storyboard */,
-				CE256E3F1BE7AFFA002734BA /* Empty.xib */,
 				CE256E031BE5C821002734BA /* SettingsViewController.swift */,
 				CE256DDC1BE5BFEA002734BA /* Assets.xcassets */,
 				CE256DDE1BE5BFEA002734BA /* LaunchScreen.storyboard */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE256DE01BE5BFEA002734BA /* LaunchScreen.storyboard in Resources */,
-				CE256E401BE7AFFA002734BA /* Empty.xib in Resources */,
 				CE256DDD1BE5BFEA002734BA /* Assets.xcassets in Resources */,
 				CE256DDB1BE5BFEA002734BA /* Main.storyboard in Resources */,
 			);
@@ -495,6 +491,7 @@
 				CE256DFC1BE5BFEA002734BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE256DFD1BE5BFEA002734BA /* Build configuration list for PBXNativeTarget "TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +500,7 @@
 				CE256DFF1BE5BFEA002734BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE256E001BE5BFEA002734BA /* Build configuration list for PBXNativeTarget "TipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +509,7 @@
 				CE256E021BE5BFEA002734BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -30,18 +30,17 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    @IBAction func tipPercentageChanged(sender: AnyObject) {
+  
+    @IBAction func TipPercentageChanged(sender: AnyObject) {
         
         let tipPct = Double(tipSlider.value)
         pctLabel.text = "\(Int(tipPct))%"
+        
         
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setDouble(Double(tipPct), forKey: "default_tip_pct")
         defaults.synchronize()
         
-
     }
     
     override func viewWillAppear(animated: Bool) {

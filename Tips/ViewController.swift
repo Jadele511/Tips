@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipPercentLabel: UILabel!
     
-    let tipPct = 18
     
     
     override func viewDidLoad() {
@@ -63,10 +62,21 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+                print("view will appear")
+        
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setDouble(Double(tipPct), forKey: "default_tip_pct")
-        defaults.synchronize()
-        print("view will appear")
+        let tipPct = defaults.doubleForKey("default_tip_pct")
+        let billAmount = (billField.text! as NSString).doubleValue
+       
+        let tip = billAmount * tipPct/100
+        let total = billAmount + tip
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format:"$%.2f", total)
+        
+        tipPercentLabel.text = "Tip (\(Int(tipPct))%)"
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
